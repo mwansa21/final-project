@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+}

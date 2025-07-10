@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Translate</h1>
+<form method="POST">
+    <input type="text" name="phrase" placeholder="Enter a phrase" required>
+    <select name="language" required>
+        <option value="bemba">Bemba</option>
+        <option value="tonga">Tonga</option>
+        <option value="nyanja">Nyanja</option>
+    </select>
+    <button type="submit">Translate</button>
+</form>
+{% if translation %}
+    <h2>Translation: {{ translation }}</h2>
+    {% if audio_path %}
+        <audio id="audio-player" controls>
+            <source src="{{ audio_path }}" type="audio/mpeg">
+        </audio>
+    {% endif %}
+{% endif %}
+{% endblock %}
